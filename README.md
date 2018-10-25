@@ -1,5 +1,4 @@
 # webguy app uses node.js and express.js server with the following directory strucure:
-
 .
 ├── app.js
 ├── bin

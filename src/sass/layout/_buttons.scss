@@ -1,0 +1,53 @@
+/* ==========================================================================
+/* ===== Buttons  ===== */
+/*========================================================================== */
+
+.button {
+	
+	/* ===== Action Button ===== */
+	&.action-button {
+		border-radius: 20px;
+		color: $whiteColor;
+		border: 0px solid $whiteColor;
+		font-size: 0.9375rem;
+		padding-left: 35px;
+		padding-right: 35px;
+		
+
+		&.white {
+			background: $whiteColor;
+			color: $primaryColor;
+
+		}
+		
+		
+		&.shadow {
+			background: $whiteColor;
+			color: $primaryColor;
+		}
+
+		&.black {
+			background: $primaryColor;
+			color: $whiteColor;
+			&:hover {
+				background: $whiteColor;
+				color: $primaryColor;
+			}
+		}
+
+		&:hover {
+			background: $primaryColor;
+			color: $whiteColor;
+
+		}
+
+		&.border-black {
+			border: 1px solid $primaryColor;
+		}
+
+		&.border-white {
+			border: 1px solid $whiteColor;
+		}
+	
+	}
+}

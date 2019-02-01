@@ -1,0 +1,232 @@
+/* ==========================================================================
+/* ===== Menus  ===== */
+/*========================================================================== */
+
+svg * {
+	fill: none;
+	stroke: currentColor;
+}
+
+svg #Black path {
+	stroke: rgba(215, 0, 39, 1)!important;
+}
+
+//* ===== Fix FOUC ===== */
+.no-js{
+	#masthead {
+		display: none;
+	}
+}
+
+
+/* ===== Header menu ===== */
+
+#masthead {
+	@include mui-animation(slide($direction: down, $amount: 120%));
+	animation-duration: 0.5s;
+
+	&.position-absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		width: 100%;
+	}
+
+	&.position-relative {
+		position: relative;
+	}
+
+
+	&.sticky-header.slideDown {
+		position: fixed;
+		top: 0;
+		left: 0;
+		
+		width: 100%;
+		z-index: 999999999999;
+
+		@include mui-animation(slide($direction: down, $amount: 120%));
+		animation-duration: 1s;
+	}
+
+	&.border-bottom-white {
+		border-bottom: 1px solid rgba(255,255,255, 0.2);
+	}
+
+	
+	#top-bar-attitude {
+		padding-top: 20px;
+
+		.title-bars {
+			cursor: pointer;
+		}
+
+		h1 a { 
+			color: $whiteColor;
+			font-size: 1.75rem;
+		}
+
+		.title-bars {
+			margin-top: 10px;
+			margin-right: 10px;
+			i { 
+				color: $whiteColor; 
+			}
+		}
+
+		&.border-bottom {
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+		}
+
+		.action-button {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.social-links {
+				margin-top: 10px;
+
+			& > a {
+				color: $whiteColor;
+				padding: 0px 5px 0px 5px;
+				&:hover {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+}
+
+.primary {
+	position: relative;
+}
+
+/* Normal Logo Navigation */
+#top-main-menu {
+	float: right;
+	display: block;
+	margin: 10px 0 0 0;
+	padding: 0;
+	list-style-type: none;
+
+	& > li {
+		float: left;
+		font-size: 1rem;
+		position: relative;
+		margin-right: 30px;
+
+		& > a {
+			display: inline-block;
+			padding: 0 0 10px 0;
+			margin: 0;
+			font-size: 1rem;
+			color: $whiteColor;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				color: $whiteColor;
+				cursor: pointer;
+			}
+
+			&:after {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: $whiteColor;
+				content: '';
+				margin-top: -2px;
+				opacity: 0;
+				transition: opacity 0.3s, transform 0.3s;
+				transform: translateY(-30px);
+			}
+		}
+
+		&:hover a:after,
+		&:focus a:after {
+			opacity: 1;
+			transform: translateY(-10px);
+		}
+
+		&:hover ul.sub-menu {
+			display: block;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		// Dropdown Navigation
+
+		ul.sub-menu,
+		ul.children {
+			position: absolute;
+			left: 0;
+			display: none;
+			padding: 24px;
+			margin: 0;
+			width: 100%;
+			min-width: 225px;
+			z-index: 9999;
+			background: $whiteColor;
+
+			li {
+				float: left;
+				clear: left;
+				line-height: 1rem;
+				padding: 5px 0;
+				display: block;
+				width: 100%;
+
+				a {
+					display: inline-block;
+					font-size: 0.9375rem;
+					color: $textColor;
+					-moz-osx-font-smoothing: grayscale;
+					letter-spacing: 0;
+					text-transform: none;
+
+					&:hover {
+						color: $primaryColor !important;
+					}
+				}
+			}
+		}
+	}
+
+	@include breakpoint(small only) {
+		float: none;
+		background: #000;
+		padding: 20px;
+		& > li {
+			float: none;
+			display: block;
+			& > a {
+				display: block;
+				margin: 0px;
+				padding: 0px;
+				&:after {
+					position: relative;
+					background: none;
+					content: '';
+				}
+			}
+			ul.sub-menu,
+			ul.children {
+				display: block;
+				position: relative;
+				background: none;
+				margin: 0px;
+				padding: 0;
+				li {
+					a {
+						&:hover {
+							color: $whiteColor !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

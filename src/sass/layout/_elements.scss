@@ -1,0 +1,44 @@
+/* ==========================================================================
+/* ===== Elements  ===== */
+/*========================================================================== */
+
+/* ===== Accordion ===== */
+ul.accordion.custom {
+	.accordion-title {
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&.minimal {
+		li.accordion-item {
+			margin-bottom: 10px;
+			border: 0px solid $borderColor;
+
+			.accordion-title {
+				color: $primaryColor;
+				font-size: 1rem;
+				border: 2px solid $borderColorLight;
+				font-family: $FontPrimary;
+				font-weight: 400;
+				&[aria-expanded='true'] {
+					border-color: $primaryColor;
+				}
+
+				&:before {
+					font-size: 1.5rem;
+				}
+				&:hover {
+					background: none;
+					border-color: rgba(38, 120, 113, 0.45);
+				}
+			}
+
+			.accordion-content {
+				border: 0;
+				p {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+/* ==========================================================================
+/* ===== Widgets  ===== */
+/*========================================================================== */
+
+
+//* ===== Sidebar Widgets ===== */
+.widget-area {
+	//* ===== Text Widget ===== */
+	.widget_text {
+		.textwidget, p {
+			color: $secondaryColor;
+		}
+
+	}
+	
+	//* ===== Widget Title ===== */
+	.widget-title {
+		text-transform: uppercase;
+		font-family: $FontPrimary;
+		font-weight: 600;
+		font-size: 0.9375rem;
+		margin-top: 40px;
+
+	}
+	
+	//* ===== Widget Title ===== */
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			list-style: none;
+			& > a {
+				border-bottom: 1px solid $borderColor;
+				display: block;
+				margin-bottom: 5px;
+				padding-bottom: 5px;
+				padding-left: 5px;
+			}
+			> ul{
+				margin-left: 10px;
+			}
+		}
+	}
+
+}
+
+/* ===== Social Widget ===== */
+.social_widget {
+	.social-links {
+		& > a {
+			font-size: 1.375rem;
+			color: $secondaryColor;
+			padding: 0px 5px 0px 5px;
+			&:hover {
+				color: $primaryColor;
+			}
+		}
+	}
+}
+	
+.white-text-color {
+	.social_widget {
+		.social-links {
+			& > a {
+				color: $whiteColor;
+				padding: 0px 5px 0px 5px;
+				&:hover {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+}

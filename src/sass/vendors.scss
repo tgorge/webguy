@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+// Foundation
+@import 'utils/foundationsettings';
+@import 'foundation';
+
+@include foundation-everything;
+
+//Fonts
+@import "node_modules/font-awesome/scss/font-awesome.scss";

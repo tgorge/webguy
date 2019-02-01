@@ -1,0 +1,239 @@
+/* ==========================================================================
+/* ===== Blog Posts ===== */
+/*========================================================================== */
+.blog-list-section {
+	&.gray {
+		background: $grayColor;
+	}
+
+	.owl-carousel-post {
+		article {
+			margin: 15px;
+		}
+	}
+
+
+	.blog-list{
+		margin: 100px 0;
+	}
+
+	article {
+		background: $whiteColor;
+		margin-bottom: 30px;
+	}
+
+	.post-image {
+		img { 
+			border-bottom-right-radius:0;
+			border-bottom-left-radius:0;
+		}
+	}
+
+	.post-body {
+		margin: 20px;
+		.post-title {
+			font-size: 1.125rem;
+		}
+	}
+
+	.post-meta {
+		padding-bottom: 1px;
+		li {
+			font-size: 0.875rem;
+			display: inline-block;
+			color: $secondaryColor;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.format-quote {
+		min-height: 300px;
+		position: relative;
+		
+		&.gray {
+			background: $grayColor;
+		}
+
+		&.black {
+			background: $primaryColor
+		}
+
+		blockquote {
+			position: absolute;
+			bottom: 0px;
+			border: 0px;
+			font-size: 1.375rem;
+			margin: 0 10% 10% 10%;
+		}
+	}
+
+	.format-image {
+		background-size: cover; 
+		background-position: 0 0; 
+		position: relative;
+		min-height: 300px;
+
+		p, a { 
+			color: $whiteColor;
+		}
+
+		a {}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.post-body {
+			position: absolute;
+			bottom: 20px;
+		}
+
+		.post-meta {
+			position: absolute;
+			bottom: 0px;
+			li {
+				font-size: 0.875rem;
+				display: inline-block;
+				color: $whiteColor;
+				i {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	
+	/* ===== When the post elements are Vertically aligned ===== */
+	&.vertical-post {
+		.post-image {
+			img {
+				border-top-right-radius:0;
+				border-bottom-right-radius:0;
+				border-bottom-left-radius:5px;
+
+				@include breakpoint(medium down) {
+					border-top-right-radius:5px;
+					border-bottom-right-radius:0;
+					border-bottom-left-radius:0;
+				}
+			}
+		}
+
+		.responsive-embed {
+			margin-bottom: 0px;
+		}
+
+		.large-order-2 {
+			.post-image {
+				img {
+					border-top-right-radius:5px;
+					border-top-left-radius:0;
+					border-bottom-right-radius:5px;
+					border-bottom-left-radius:0;
+
+					@include breakpoint(medium down) {
+						border-top-right-radius:5px;
+						border-bottom-right-radius:0;
+						border-top-left-radius:5px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+.pagination {
+	margin: 40px 0 0 0; 
+	padding: 0px;
+	a {
+		color: $secondaryColor;
+	}
+	
+	&.gray {
+		background: $grayColor;
+	}
+	.current {
+		background: $secondaryColor;
+	}
+}
+
+
+/* ==========================================================================
+/* ===== Single Post  ===== */
+/*========================================================================== */
+
+article.single-post-article {
+	.publication-date {
+		color: $whiteColor;
+	}
+
+	h3.category {
+		text-transform: uppercase;
+		font-size: 0.875rem;
+	}
+
+	.author {
+		margin-top: 25px;
+
+		img {
+			border-radius: 100%;
+			width: 55px;
+			height: auto;
+		}
+		span {
+			border-bottom: none;
+		}
+	}
+
+	.share-buttons {
+
+		text-align: center;
+		margin: 40px 0;
+
+		ul {
+			margin: 0px;
+		}
+
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+			font-size: 18px;
+
+			& > a {
+				color: $whiteColor;
+
+				&:hover {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+	
+	/* ===== Article body ===== */
+	.article-body {
+		color: $primaryColor;
+		margin: 100px 0;
+		
+		blockquote {
+			font-size: 1.125em;
+			font-style: italic;
+		}
+
+
+	}
+	
+}
+
+/* ===== Article Sidebar ===== */
+.widget-area {
+	color: $primaryColor;
+	margin: 100px 0;
+}

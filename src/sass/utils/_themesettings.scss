@@ -1,0 +1,779 @@
+//* ==========================================================================
+//	Theme Settings
+//========================================================================== */
+
+
+//* ===== Primary Colors ===== */
+$primaryColor:			#333333;
+$secondaryColor:		#546e7a; // Gray
+$dentistColor: 			rgba(38, 120, 113, 1);
+
+$textColor:				#888888;
+$whiteColor:			#ffffff;
+$blackColor:			#000000;
+$grayColor: 			#f0f4f7;
+
+//* ===== Border ===== */
+$borderColor:			#ccc;
+$borderColorLight:		#f3f3f3;
+
+//* ===== Primary Fonts ===== */
+$FontPrimary:		'Poppins', sans-serif;
+$FontSecondary:		'Hind', sans-serif;
+$fa:				'FontAwesome';
+
+
+/* ==========================================================================
+/* ===== Boxed  ===== */
+/*========================================================================== */
+
+.boxed-page-1280 {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.boxed-page-1400 {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.boxed-page-1600 {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.boxed-page-1920 {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+/* ===== Background Gradients  ===== */
+/*========================================================================== */
+
+/* ===== gradient-a -> gradient-a-95 ===== */
+
+.gradient-a-10 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.1), rgba(115, 0, 165, 0.1));
+}
+.gradient-a-15 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.15), rgba(115, 0, 165, 0.15));
+}
+.gradient-a-20 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.20), rgba(115, 0, 165, 0.20));
+}
+.gradient-a-25 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.25), rgba(115, 0, 165, 0.25));
+}
+.gradient-a-30 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.30), rgba(115, 0, 165, 0.30));
+}
+.gradient-a-35 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.35), rgba(115, 0, 165, 0.35));
+}
+.gradient-a-40 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.40), rgba(115, 0, 165, 0.40));
+}
+.gradient-a-45 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.45), rgba(115, 0, 165, 0.45));
+}
+.gradient-a-50 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.50), rgba(115, 0, 165, 0.50));
+}
+.gradient-a-45 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.45), rgba(115, 0, 165, 0.45));
+}
+.gradient-a-50 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.50), rgba(115, 0, 165, 0.50));
+}
+.gradient-a-55 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.55), rgba(115, 0, 165, 0.55));
+}
+.gradient-a-60 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.60), rgba(115, 0, 165, 0.60));
+}
+.gradient-a-65 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.65), rgba(115, 0, 165, 0.65));
+}
+.gradient-a-70 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.70), rgba(115, 0, 165, 0.70));
+}
+.gradient-a-75 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.75), rgba(115, 0, 165, 0.75));
+}
+.gradient-a-80 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.80), rgba(115, 0, 165, 0.80));
+}
+.gradient-a-85 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.85), rgba(115, 0, 165, 0.85));
+}
+.gradient-a-90 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.90), rgba(115, 0, 165, 0.90));
+}
+.gradient-a-95 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 0.95), rgba(115, 0, 165, 0.95));
+}
+.gradient-a-100 {
+	@include linear-gradient(142deg,rgba(215, 0, 39, 1), rgba(115, 0, 165, 1));
+}
+
+/* ===== gradient-b -> gradient-b-95 ===== */
+
+.gradient-b-10 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.10), rgba(100, 65, 165, 0.10));
+}
+.gradient-b-15 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.15), rgba(100, 65, 165, 0.15));
+}
+.gradient-b-20 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.2), rgba(100, 65, 165, 0.2));
+}
+.gradient-b-25 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.25), rgba(100, 65, 165, 0.25));
+}
+.gradient-b-30 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.3), rgba(100, 65, 165, 0.3));
+}
+.gradient-b-35 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.35), rgba(100, 65, 165, 0.35));
+}
+.gradient-b-40 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.40), rgba(100, 65, 165, 0.40));
+}
+.gradient-b-45 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.45), rgba(100, 65, 165, 0.45));
+}
+.gradient-b-50 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.50), rgba(100, 65, 165, 0.50));
+}
+.gradient-b-55 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.55), rgba(100, 65, 165, 0.55));
+}
+.gradient-b-60 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.60), rgba(100, 65, 165, 0.60));
+}
+.gradient-b-65 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.65), rgba(100, 65, 165, 0.65));
+}
+.gradient-b-70 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.70), rgba(100, 65, 165, 0.70));
+}
+.gradient-b-75 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.75), rgba(100, 65, 165, 0.75));
+}
+.gradient-b-80 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.80), rgba(100, 65, 165, 0.80));
+}
+.gradient-b-85 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.85), rgba(100, 65, 165, 0.85));
+}
+.gradient-b-90 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.90), rgba(100, 65, 165, 0.90));
+}
+.gradient-b-95 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 0.95), rgba(100, 65, 165, 0.95));
+}
+.gradient-b-100 {
+	@include linear-gradient(142deg,rgba(42, 8, 69, 1), rgba(100, 65, 165, 1));
+}
+/* ===== gradient-c -> gradient-c-95 ===== */
+
+.gradient-c-10 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.1), rgba(36, 155, 214, 0.1));
+}
+.gradient-c-15 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.15), rgba(36, 155, 214, 0.15));
+}
+.gradient-c-20 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.20), rgba(36, 155, 214, 0.20));
+}
+.gradient-c-25 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.25), rgba(36, 155, 214, 0.25));
+}
+.gradient-c-30 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.30), rgba(36, 155, 214, 0.30));
+}
+.gradient-c-35 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.35), rgba(36, 155, 214, 0.35));
+}
+.gradient-c-40 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.40), rgba(36, 155, 214, 0.40));
+}
+.gradient-c-45 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.45), rgba(36, 155, 214, 0.45));
+}
+.gradient-c-50 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.50), rgba(36, 155, 214, 0.50));
+}
+.gradient-c-55 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.55), rgba(36, 155, 214, 0.55));
+}
+.gradient-c-60 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.60), rgba(36, 155, 214, 0.60));
+}
+.gradient-c-65 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.65), rgba(36, 155, 214, 0.65));
+}
+.gradient-c-70 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.70), rgba(36, 155, 214, 0.70));
+}
+.gradient-c-75 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.75), rgba(36, 155, 214, 0.75));
+}
+.gradient-c-80 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.80), rgba(36, 155, 214, 0.80));
+}
+.gradient-c-85 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.85), rgba(36, 155, 214, 0.85));
+}
+.gradient-c-90 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.90), rgba(36, 155, 214, 0.90));
+}
+.gradient-c-95 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 0.95), rgba(36, 155, 214, 0.95));
+}
+.gradient-c-100 {
+	@include linear-gradient(142deg,rgba(12, 91, 156, 1), rgba(36, 155, 214, 1));
+}
+
+/* ===== gradient-d -> gradient-d-95 ===== */
+.gradient-d {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 1), rgba(170, 7, 107, 1));
+}
+.gradient-d-10 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.1), rgba(170, 7, 107, 0.1));
+}
+.gradient-d-15 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.15), rgba(170, 7, 107, 0.15));
+}
+.gradient-d-20 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.20), rgba(170, 7, 107, 0.20));
+}
+.gradient-d-25 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.25), rgba(170, 7, 107, 0.25));
+}
+.gradient-d-30 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.30), rgba(170, 7, 107, 0.30));
+}
+.gradient-d-35 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.35), rgba(170, 7, 107, 0.35));
+}
+.gradient-d-40 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.40), rgba(170, 7, 107, 0.40));
+}
+.gradient-d-45 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.45), rgba(170, 7, 107, 0.45));
+}
+.gradient-d-50 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.50), rgba(170, 7, 107, 0.50));
+}
+.gradient-d-55 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.55), rgba(170, 7, 107, 0.55));
+}
+.gradient-d-60 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.60), rgba(170, 7, 107, 0.60));
+}
+.gradient-d-65 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.65), rgba(170, 7, 107, 0.65));
+}
+.gradient-d-70 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.70), rgba(170, 7, 107, 0.70));
+}
+.gradient-d-75 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.75), rgba(170, 7, 107, 0.75));
+}
+.gradient-d-80 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.80), rgba(170, 7, 107, 0.80));
+}
+.gradient-d-85 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.85), rgba(170, 7, 107, 0.85));
+}
+.gradient-d-90 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.90), rgba(170, 7, 107, 0.90));
+}
+.gradient-d-95 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 0.95), rgba(170, 7, 107, 0.95));
+}
+.gradient-d-100 {
+	@include linear-gradient(142deg,rgba(98, 4, 95, 1), rgba(170, 7, 107, 1));
+}
+
+/* ===== gradient-e -> gradient-e-95 ===== */
+.gradient-e { 
+	@include linear-gradient(142deg,rgba(19, 106, 138, 1), rgba(38, 120, 113, 1));
+}
+.gradient-e-10 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.1), rgba(38, 120, 113, 0.1));
+}
+.gradient-e-15 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.15), rgba(38, 120, 113, 0.15));
+}
+.gradient-e-20 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.20), rgba(38, 120, 113, 0.20));
+}
+.gradient-e-25 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.25), rgba(38, 120, 113, 0.25));
+}
+.gradient-e-30 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.30), rgba(38, 120, 113, 0.30));
+}
+.gradient-e-35 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.35), rgba(38, 120, 113, 0.35));
+}
+.gradient-e-40 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.40), rgba(38, 120, 113, 0.40));
+}
+.gradient-e-45 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.45), rgba(38, 120, 113, 0.45));
+}
+.gradient-e-50 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.50), rgba(38, 120, 113, 0.50));
+}
+.gradient-e-55 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.55), rgba(38, 120, 113, 0.55));
+}
+.gradient-e-60 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.60), rgba(38, 120, 113, 0.60));
+}
+.gradient-e-65 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.65), rgba(38, 120, 113, 0.65));
+}
+.gradient-e-70 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.70), rgba(38, 120, 113, 0.70));
+}
+.gradient-e-75 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.75), rgba(38, 120, 113, 0.75));
+}
+.gradient-e-80 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.80), rgba(38, 120, 113, 0.80));
+}
+.gradient-e-85 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.85), rgba(38, 120, 113, 0.85));
+}
+.gradient-e-90 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.90), rgba(38, 120, 113, 0.90));
+}
+.gradient-e-95 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 0.95), rgba(38, 120, 113, 0.95));
+}
+.gradient-e-100 {
+	@include linear-gradient(142deg,rgba(19, 106, 138, 1), rgba(38, 120, 113, 1));
+}
+
+/* ===== gradient-f -> gradient-f-95 ===== */
+.gradient-f { 
+	@include linear-gradient(142deg,rgba(104, 89, 222, 1), rgba(240, 55, 116, 1));
+}
+.gradient-f-10 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.1), rgba(240, 55, 116, 0.1));
+}
+.gradient-f-15 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.15), rgba(240, 55, 116, 0.15));
+}
+.gradient-f-20 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.20), rgba(240, 55, 116, 0.20));
+}
+.gradient-f-25 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.25), rgba(240, 55, 116, 0.25));
+}
+.gradient-f-30 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.30), rgba(240, 55, 116, 0.30));
+}
+.gradient-f-35 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.35), rgba(240, 55, 116, 0.35));
+}
+.gradient-f-40 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.40), rgba(240, 55, 116, 0.40));
+}
+.gradient-f-45 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.45), rgba(240, 55, 116, 0.45));
+}
+.gradient-f-50 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.50), rgba(240, 55, 116, 0.50));
+}
+.gradient-f-55 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.55), rgba(240, 55, 116, 0.55));
+}
+.gradient-f-60 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.60), rgba(240, 55, 116, 0.60));
+}
+.gradient-f-65 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.65), rgba(240, 55, 116, 0.65));
+}
+.gradient-f-70 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.70), rgba(240, 55, 116, 0.70));
+}
+.gradient-f-75 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.75), rgba(240, 55, 116, 0.75));
+}
+.gradient-f-80 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.80), rgba(240, 55, 116, 0.80));
+}
+.gradient-f-85 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.85), rgba(240, 55, 116, 0.85));
+}
+.gradient-f-90 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.90), rgba(240, 55, 116, 0.90));
+}
+.gradient-f-95 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 0.95), rgba(240, 55, 116, 0.95));
+}
+.gradient-f-100 {
+	@include linear-gradient(142deg,rgba(104, 89, 222, 1), rgba(240, 55, 116, 1));
+}
+
+/* ===== gradient-g -> gradient-g-100 ===== */
+.gradient-g { 
+	@include linear-gradient(142deg,rgba(252, 74, 26, 1), rgba(247, 183, 51, 1));
+}
+.gradient-g-10 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.1), rgba(247, 183, 51, 0.1));
+}
+.gradient-g-15 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.15), rgba(247, 183, 51, 0.15));
+}
+.gradient-g-20 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.20), rgba(247, 183, 51, 0.20));
+}
+.gradient-g-25 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.25), rgba(247, 183, 51, 0.25));
+}
+.gradient-g-30 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.30), rgba(247, 183, 51, 0.30));
+}
+.gradient-g-35 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.35), rgba(247, 183, 51, 0.35));
+}
+.gradient-g-40 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.40), rgba(247, 183, 51, 0.40));
+}
+.gradient-g-45 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.45), rgba(247, 183, 51, 0.45));
+}
+.gradient-g-50 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.50), rgba(247, 183, 51, 0.50));
+}
+.gradient-g-55 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.55), rgba(247, 183, 51, 0.55));
+}
+.gradient-g-60 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.60), rgba(247, 183, 51, 0.60));
+}
+.gradient-g-65 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.65), rgba(247, 183, 51, 0.65));
+}
+.gradient-g-70 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.70), rgba(247, 183, 51, 0.70));
+}
+.gradient-g-75 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.75), rgba(247, 183, 51, 0.75));
+}
+.gradient-g-80 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.80), rgba(247, 183, 51, 0.80));
+}
+.gradient-g-85 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.85), rgba(247, 183, 51, 0.85));
+}
+.gradient-g-90 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.90), rgba(247, 183, 51, 0.90));
+}
+.gradient-g-95 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 0.95), rgba(247, 183, 51, 0.95));
+}
+.gradient-g-100 {
+	@include linear-gradient(142deg,rgba(252, 74, 26, 1), rgba(247, 183, 51, 1));
+}
+
+/* ===== gradient-h -> gradient-h-100 ===== */
+.gradient-h { 
+	@include linear-gradient(142deg,rgba(211, 16, 39, 1), rgba(234, 56, 77, 1));
+}
+.gradient-h-10 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.1), rgba(234, 56, 77, 0.1));
+}
+.gradient-h-15 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.15), rgba(234, 56, 77, 0.15));
+}
+.gradient-h-20 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.20), rgba(234, 56, 77, 0.20));
+}
+.gradient-h-25 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.25), rgba(234, 56, 77, 0.25));
+}
+.gradient-h-30 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.30), rgba(234, 56, 77, 0.30));
+}
+.gradient-h-35 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.35), rgba(234, 56, 77, 0.35));
+}
+.gradient-h-40 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.40), rgba(234, 56, 77, 0.40));
+}
+.gradient-h-45 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.45), rgba(234, 56, 77, 0.45));
+}
+.gradient-h-50 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.50), rgba(234, 56, 77, 0.50));
+}
+.gradient-h-55 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.55), rgba(234, 56, 77, 0.55));
+}
+.gradient-h-60 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.60), rgba(234, 56, 77, 0.60));
+}
+.gradient-h-65 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.65), rgba(234, 56, 77, 0.65));
+}
+.gradient-h-70 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.70), rgba(234, 56, 77, 0.70));
+}
+.gradient-h-75 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.75), rgba(234, 56, 77, 0.75));
+}
+.gradient-h-80 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.80), rgba(234, 56, 77, 0.80));
+}
+.gradient-h-85 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.85), rgba(234, 56, 77, 0.85));
+}
+.gradient-h-90 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.90), rgba(234, 56, 77, 0.90));
+}
+.gradient-h-95 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 0.95), rgba(234, 56, 77, 0.95));
+}
+.gradient-h-100 {
+	@include linear-gradient(142deg,rgba(211, 16, 39, 1), rgba(234, 56, 77, 1));
+}
+
+/* ===== gradient-i -> gradient-i-100 ===== */
+.gradient-i { 
+	@include linear-gradient(142deg,rgba(22, 160, 133, 1), rgba(244, 208, 63, 1));
+}
+.gradient-i-10 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.1), rgba(244, 208, 63, 0.1));
+}
+.gradient-i-15 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.15), rgba(244, 208, 63, 0.15));
+}
+.gradient-i-20 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.20), rgba(244, 208, 63, 0.20));
+}
+.gradient-i-25 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.25), rgba(244, 208, 63, 0.25));
+}
+.gradient-i-30 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.30), rgba(244, 208, 63, 0.30));
+}
+.gradient-i-35 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.35), rgba(244, 208, 63, 0.35));
+}
+.gradient-i-40 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.40), rgba(244, 208, 63, 0.40));
+}
+.gradient-i-45 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.45), rgba(244, 208, 63, 0.45));
+}
+.gradient-i-50 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.50), rgba(244, 208, 63, 0.50));
+}
+.gradient-i-55 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.55), rgba(244, 208, 63, 0.55));
+}
+.gradient-i-60 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.60), rgba(244, 208, 63, 0.60));
+}
+.gradient-i-65 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.65), rgba(244, 208, 63, 0.65));
+}
+.gradient-i-70 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.70), rgba(244, 208, 63, 0.70));
+}
+.gradient-i-75 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.75), rgba(244, 208, 63, 0.75));
+}
+.gradient-i-80 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.80), rgba(244, 208, 63, 0.80));
+}
+.gradient-i-85 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.85), rgba(244, 208, 63, 0.85));
+}
+.gradient-i-90 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.90), rgba(244, 208, 63, 0.90));
+}
+.gradient-i-95 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 0.95), rgba(244, 208, 63, 0.95));
+}
+.gradient-i-100 {
+	@include linear-gradient(142deg,rgba(22, 160, 133, 1), rgba(244, 208, 63, 1));
+}
+
+/* ===== gradient-j -> gradient-j-100 ===== */
+.gradient-j { 
+	@include linear-gradient(142deg,rgba(0, 0, 0, 1), rgba(67, 67, 67, 1));
+}
+.gradient-j-10 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.1), rgba(67, 67, 67, 0.1));
+}
+.gradient-j-15 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.15), rgba(67, 67, 67, 0.15));
+}
+.gradient-j-20 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.20), rgba(67, 67, 67, 0.20));
+}
+.gradient-j-25 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.25), rgba(67, 67, 67, 0.25));
+}
+.gradient-j-30 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.30), rgba(67, 67, 67, 0.30));
+}
+.gradient-j-35 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.35), rgba(67, 67, 67, 0.35));
+}
+.gradient-j-40 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.40), rgba(67, 67, 67, 0.40));
+}
+.gradient-j-45 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.45), rgba(67, 67, 67, 0.45));
+}
+.gradient-j-50 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.50), rgba(67, 67, 67, 0.50));
+}
+.gradient-j-55 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.55), rgba(67, 67, 67, 0.55));
+}
+.gradient-j-60 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.60), rgba(67, 67, 67, 0.60));
+}
+.gradient-j-65 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.65), rgba(67, 67, 67, 0.65));
+}
+.gradient-j-70 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.70), rgba(67, 67, 67, 0.70));
+}
+.gradient-j-75 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.75), rgba(67, 67, 67, 0.75));
+}
+.gradient-j-80 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.80), rgba(67, 67, 67, 0.80));
+}
+.gradient-j-85 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.85), rgba(67, 67, 67, 0.85));
+}
+.gradient-j-90 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.90), rgba(67, 67, 67, 0.90));
+}
+.gradient-j-95 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 0.95), rgba(67, 67, 67, 0.95));
+}
+.gradient-j-100 {
+	@include linear-gradient(142deg,rgba(0, 0, 0, 1), rgba(67, 67, 67, 1));
+}
+
+
+/* ==========================================================================
+/* ===== Text Gradients  ===== */
+/*========================================================================== */
+
+.text-gradient-a {
+	@include text-gradient(142deg,#d70027, #7300a5);
+}
+.text-gradient-b {
+	@include text-gradient(142deg,#2a0845, #6441a5);
+}
+.text-gradient-c {
+	@include text-gradient(142deg,#0c5b9c, #249bd6);
+}
+.text-gradient-d {
+	@include text-gradient(142deg,#62045f, #aa076b);
+}
+.text-gradient-e {
+	@include text-gradient(142deg,rgba(19, 106, 138, 1), rgba(38, 120, 113, 1));
+}
+.text-gradient-f {
+	@include text-gradient(142deg,rgba(104, 89, 222, 1), rgba(240, 55, 116, 1));
+}
+.text-gradient-g {
+	@include text-gradient(142deg,rgba(252, 74, 26, 1), rgba(247, 183, 51, 1));
+}
+.text-gradient-h {
+	@include text-gradient(142deg,rgba(211, 16, 39, 1), rgba(234, 56, 77, 1));
+}
+.text-gradient-i {
+	@include text-gradient(142deg,rgba(22, 160, 133, 1), rgba(244, 208, 63, 1));
+}
+
+
+/* ==========================================================================
+/* ===== Border Gradients  ===== */
+/*========================================================================== */
+
+.border-gradient-a {
+	@include border-gradient(142deg,#d70027, #7300a5, 1px);
+}
+
+
+/* ==========================================================================
+/* ===== Opacity  ===== */
+/*========================================================================== */
+
+.opacity90 {
+	opacity: 0.9;
+}
+
+
+/* ==========================================================================
+/* ===== Blur  ===== */
+/*========================================================================== */
+
+.blur {
+	filter:blur(5px);
+}
+
+
+/* ==========================================================================
+/* ===== Radius  ===== */
+/*========================================================================== */
+
+.radius {
+	border-radius: 4px;
+}
+
+
+/* ==========================================================================
+/* ===== Shadow  ===== */
+/*========================================================================== */
+
+.shadow {
+	@include box-shadow( 0px, 0px, 20px, 2px, rgba(0,0,0,0.1) ); background: #fff;
+}
+
+
+/* ==========================================================================
+/* ===== Edges  ===== */
+/*========================================================================== */
+
+.angle-edge-top-right-bottom-right {
+	@include angled-edge('inside top', 'lower right', $grayColor, 35);
+	@include angled-edge('inside bottom', 'upper left', $grayColor, 35);
+	padding: 60px 0 80px 0;
+}
+
+.angle-edge-top-left-bottom-left {
+	@include angled-edge('inside top', 'lower left', $grayColor, 35);
+	@include angled-edge('inside bottom', 'upper right', $grayColor, 35);
+	padding: 60px 0 80px 0;
+}
+
+
+.angle-edge-top-right-bottom-left {
+	@include angled-edge('inside top', 'lower right', $grayColor, 35);
+	@include angled-edge('inside bottom', 'upper right', $grayColor, 35);
+	padding: 60px 0 80px 0;
+}
+
+.angle-edge-top-left-bottom-right {
+	@include angled-edge('inside top', 'lower left', $grayColor, 35);
+	@include angled-edge('inside bottom', 'upper left', $grayColor, 35);
+	padding: 60px 0 80px 0;
+}

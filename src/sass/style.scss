@@ -1,0 +1,124 @@
+/*
+Theme Name: Attitude HTML Template
+Theme URI: https://wplook.com/
+Author: WPlook Themes (Victor Tihai)
+Author URI: https://wplook.com/
+Description: Attitude is HTML Template
+Version: 1.0.2
+Last Update: 08/09/2017 (d/m/y);
+
+
+==========================================================================
+===== Table Of Content  =====
+==========================================================================
+
+0. MIXIN Founctions
+1. Boxed Size
+2. Background Gradients
+	Gradient -> a
+	Gradient -> b
+	Gradient -> c
+	Gradient -> d
+	Gradient -> e
+	Gradient -> f
+	Gradient -> g
+	Gradient -> h
+	Gradient -> i
+	Gradient -> j
+3. Text Gradients
+4. Border Gradients
+5. Opacity
+6. Radius
+7. Shadow
+8. Edges
+9. Typography
+10. Toolbar
+11. Header
+12. Slider Intro
+13. Menus
+14. Blog Posts
+15. Single Post Styles
+16. Sections
+	Default Section Styles
+	Sponsor Section
+	Donation Slider Section
+	Book Appointment Section
+	Welcome Section
+	Action Bar Section
+	Key Benefits Section
+	Price Section
+	Blog Posts Section
+	Schedule Section
+	Testimonials Section
+	Team Section
+	Welcome Section 2
+	Venue Section
+	Features Section
+17. Comments
+18. Sidebar Widgets
+19. Elements - > Accordion
+20. Owl Carousel
+21. Footer
+22. Buttons
+23. Projects
+24. Motion ui Transitions
+25. Motion ui Animations
+
+*/
+
+
+//	The utils/ folder gathers all Sass tools and helpers used across the project.
+//	Every global variable, function, mixin and placeholder should be put in here.
+
+	@import 'util/util';
+	@import 'utils/mixin.scss';
+	@import 'utils/themesettings.scss';
+
+	@import 'motion-ui';
+
+
+
+//	The base/ folder holds what we might call the boilerplate code for the project.
+//	In there, you might find the some typographic rules, and some standard styles for commonly used HTML elements.
+
+
+	@import 'base/general.scss';
+	@import 'base/typography.scss';
+
+
+//	The layout/ folder contains everything that takes part in laying out the site or application.
+//	This folder could have stylesheets for the main parts of the site (header, footer, menu, sidebar…)
+
+	@import 'layout/header.scss';
+	@import 'layout/menu.scss';
+	@import 'layout/post.scss';
+	@import 'layout/sections.scss';
+	@import 'layout/galleries.scss';
+	@import 'layout/comments.scss';
+	@import 'layout/widgets.scss';
+	@import 'layout/nav_post.scss';
+	@import 'layout/elements.scss';
+	@import 'layout/owl.scss';
+	@import 'layout/footer.scss';
+	@import 'layout/buttons.scss';
+	@import 'layout/projects.scss';
+
+
+
+
+//	If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page.
+
+	
+	//@import 'page/contact.scss';
+	
+	/* Motion ui Transitions */
+	@include motion-ui-transitions;
+
+	/* Motion ui Animations */
+	@include motion-ui-animations; 
+
+// Plugins
+
+	@import 'plugins/fresco.scss';
+	@import 'plugins/woocommerce.scss';
+

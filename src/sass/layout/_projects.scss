@@ -1,0 +1,124 @@
+/* ==========================================================================
+/* ===== Projects List ===== */
+/*========================================================================== */
+.project-item {
+
+	&.margin-bottom {
+		margin-bottom: 30px;
+	}
+
+	figure.effect-project {
+		position: relative;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			transition: all 0.3s;
+		}
+	}
+
+	figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		height: 100%;
+		transition: all 0.2s ease-in-out 0.1s;
+		-webkit-backface-visibility: hidden;
+		transform: translateZ(0);
+	}
+
+	&:hover figcaption, 
+	&:focus figcaption,
+	&:active figcaption  {
+		opacity: 0.98;
+  		transform: translateZ(200px);
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
+
+
+
+	.description {
+		background: #fff;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+	}
+
+	p {
+		margin: 0px;
+	}
+
+
+	/* ==========================================================================
+	/* ===== Projects Section ===== */
+	/*========================================================================== */
+
+	.gradient-a {
+		h2 {
+			color: rgba(215, 0, 39, 1);
+		}
+	}
+	.gradient-b {
+		h2 {
+			color: rgba(42, 8, 69, 1);
+		}
+	}
+	.gradient-c {
+		h2 {
+			color: rgba(12, 91, 156, 1);
+		}
+	}
+	.gradient-d {
+		h2 {
+			color: rgba(98, 4, 95, 1);
+		}
+	}
+	.gradient-e {
+		h2 {
+			color: rgba(19, 106, 138, 1);
+		}
+	}
+	.gradient-f {
+		h2 {
+			color: rgba(104, 89, 222, 1);
+		}
+	}
+	.gradient-g {
+		h2 {
+			color: rgba(252, 74, 26, 1);
+		}
+	}
+	.gradient-h {
+		h2 {
+			color: rgba(211, 16, 39, 1);
+		}
+	}
+	.gradient-i {
+		h2 {
+			color: rgba(22, 160, 133, 1);
+		}
+	}
+	.gradient-j {
+		h2 {
+			color: rgba(0, 0, 0, 1);
+		}
+	}
+}
+
+/* ==========================================================================
+	/* ===== Single Project ===== */
+	/*========================================================================== */
+.single-project {
+	margin: 100px 0;
+	
+	.fresco img{
+		margin-bottom: 40px;
+	}
+
+}

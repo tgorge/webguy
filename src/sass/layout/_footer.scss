@@ -1,0 +1,57 @@
+/* ==========================================================================
+/* ===== Footer  ===== */
+/*========================================================================== */
+
+.site-footer {
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.textwidget, p {
+		color: $secondaryColor;
+		font-size: 0.875rem;
+	}
+	
+	&.gray {
+		background: $grayColor;
+	}
+
+	&.black {
+		background: $blackColor;
+	}
+	
+	h4 {
+		border-bottom: 1px solid $borderColor;
+		text-transform: uppercase;
+		font-family: $FontPrimary;
+		font-weight: 600;
+		font-size: 0.9375rem;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.menu li {
+		display: block;
+		
+		a {
+			color: $secondaryColor;
+			margin: 0 0 10px 0;
+			padding: 0;
+			font-size: 0.9375rem;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.copy {
+		margin-top: 20px;
+	}
+
+	/* ===== White color for text, used when the Footer is dark ===== */
+	&.white-text-color {
+		h4, li, p, .menu li a, .textwidget {
+			color: $whiteColor;
+		}
+	}
+}

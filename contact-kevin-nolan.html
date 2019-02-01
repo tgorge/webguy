@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NVSWBP3');</script>
+<!-- End Google Tag Manager -->
+	<meta charset="utf-8" />
+	<title>Contact Kevin Nolan | kevinnolan.me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+	<link rel="stylesheet" href="assets/styles/vendors.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+	
+	<!-- JavaScripts -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133562417-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-133562417-1');
+	</script>
+
+
+	<script src="assets/javascripts/vendor.min.js"></script>
+	<script>
+		$(function () {
+
+    // init the validator
+    // validator files are included in the download package
+    // otherwise download from http://1000hz.github.io/bootstrap-validator
+
+
+    // when the form is submitted
+    $('#contact-form').on('submit', function (e) {
+
+        // if the validator does not prevent form submit
+        if (!e.isDefaultPrevented()) {
+            var url = "/contact/contact.php";
+
+            // POST values in the background the the script URL
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $(this).serialize(),
+                success: function (data)
+                {
+                    // data = JSON object that contact.php returns
+
+                    // we recieve the type of the message: success x danger and apply it to the 
+                    var messageAlert = 'alert-' + data.type;
+                    var messageText = data.message;
+
+                    // let's compose Bootstrap alert box HTML
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    
+                    // If we have messageAlert and messageText
+                    if (messageAlert && messageText) {
+                        // inject the alert to .messages div in our form
+                        $('#contact-form').find('.messages').html(alertBox);
+                        // empty the form
+                        $('#contact-form')[0].reset();
+                    }
+                }
+            });
+            return false;
+        }
+    })
+});
+		</script>
+</head>
+<body>	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVSWBP3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div id="page" class="hfeed site boxed-page-full"> <!-- In order to make the page boxed, you can apply 1. boxed-page-1280, 2. boxed-page-1400, 3. boxed-page-1600 or boxed-page-1920 -->
+		<div id="main" class="site-main">
+			<!-- Header / Menu / Action button -->
+			<header id="masthead" class="site-header position-absolute sticky-header border-bottom-white" role="banner" data-headroom>
+				<div class="grid-container grid-container-padded">
+					<div id="top-bar-attitude"><!-- you can add the class .border-bottom -->
+						<div class="grid-x grid-margin-x">
+							<!-- Logo -->
+							<div class="auto  medium-4 cell">
+								<span class="title-bars float-left" data-responsive-toggle="top-main-menu" data-hide-for="medium">
+									<i class="fa fa-bars" aria-hidden="true" data-toggle="top-main-menu"></i>
+								</span>
+    								<h1><a href="index.html" title="Kevin Nolan, Web Guy">Kevin Nolan</a></h1>
+							</div>
+
+							<!-- Actioon Buttons 
+							<div class="shrink medium-2 medium-order-3 cell">
+								<a href="contact-kevin-nolan.html" class="button action-button expanded float-right shadow hide-for-small-only">Get in Touch</a>
+							</div>-->
+
+							<!-- Menu -->
+							<div class="small-12 medium-6 cell">
+								 <nav class="primary navigation">
+
+									<ul id="top-main-menu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about-kevin-nolan.html">About Kevin Nolan</a></li>
+										<li><a href="contact-kevin-nolan.html">Get in Touch</a></li>
+
+										
+										
+									</ul>
+								</nav>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header><!-- #masthead .site-header -->
+
+			<!-- Teaser -->
+			<article class="single-post-article">	
+				<section class="grid-y teaser" style="min-height: 85px">
+					<div class="cell auto gradient-a-75">
+						
+					</div>
+				</section><!-- Teaser -->
+				</article>
+	
+
+				<!-- Contact Me Sectin -->
+<!-- Book Appointment Sectin -->
+				<section id="book-appointment" class="book-appointment">
+					<div class="grid-container grid-container-padded shadow radius">
+						<div class="grid-x">
+							<div class="cell small-12">
+								<header class="section-head">
+									<h2 class="text-center">Get in Touch</h2>
+									
+									<div class="section-head-actions text-center">
+										<p>Use the form below to send me a message and I will get back to you as soon as possible. <br>Email me: <a href="mailto:ask@kevinnolan.me">ask@kevinnolan.me</a>
+										| Call or Text: <a href="tel:+1-904-832-7611">904-832-7611</a>
+											
+											
+											</p>
+									</div><!-- /.section-head-actions -->
+								</header><!-- /.section-head -->
+							</div>
+							<div class="section-body">
+							   <form id="contact-form" method="post" action="contact/contact.php" role="form" data-abide="ajax">
+									<div data-abide-error class="alert callout" style="display: none;">
+										<p><i class="fa fa-alert"></i> There are some errors in your form.</p>
+									</div>
+									
+									<!-- First Name -->
+									<div class="grid-x grid-margin-x">
+										<div class="cell small-12 medium-6">
+											<label for="name"><p>First Name</p>
+												<input id="name" name="name" type="text" placeholder="First Name" aria-describedby="exampleHelpText" required>
+												<span class="form-error">
+													Please enter your first name.      
+												</span>
+											</label>
+										</div>
+										
+										<!-- Last Name -->
+										<div class="cell small-12 medium-6">
+											<label for="surname"><p>Last Name</p>
+												<input id="surname" name="surname" type="text" placeholder="Last Name" aria-describedby="exampleHelpText" required>
+												<span class="form-error">
+													Please enter your last name.
+												</span>
+											</label>
+										</div>
+										
+										<!-- Email -->
+										<div class="cell small-12 medium-6">
+											<label for="email"><p>Email</p>
+												<input id="email" name="email" type="email" placeholder="Email Address" aria-describedby="exampleHelpText" required>
+												<span class="form-error">
+													Please enter your email addresss.
+												</span>
+											</label>
+										</div> 
+										
+										<!-- Date-time -->
+										<div class="cell small-12 medium-6">
+											<label for="need"><p>Interested In:</p>
+												<select id="need" placeholder="Interested in..." name="need">
+													<option value="">Select One</option>
+													<option value="collaboration">Professional Collaboration</option>
+													<option value="opportunity">A Contract or Freelance Opportunity</option>
+													<option value="employment">A Permenant Position</option>
+													<option value="hello">Just Saying Hi</option>
+													<option value="bug">Reporting a Site Bug</option>
+													<option value="other">Other</option>
+
+													
+												</select>
+												<span class="form-error">
+													Please select a subject.
+												</span>
+											</label>
+										</div>
+									</div><!-- /.grid-x .grid-margin-x -->
+									
+									<!-- Textarea -->
+									<div class="grid-x grid-margin-x">
+										<div class="cell">
+											<label for="message"><p>Message</p>
+												<textarea class="textarea" id="message" name="message" rows="8" placeholder="Message" required></textarea>
+											</label>
+										</div>
+									</div><!-- /.grid-x -->
+									
+									<!-- Submit Button -->
+										<div class="grid-x inner align-center-middle">
+											<div class="small-12 medium 6 large-4">
+											<fieldset class="cell auto text-center">
+											<button class="button action-button gradient-f-100" type="submit" value="Submit">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+										</fieldset>
+									</div>
+						</div>
+											</form>
+							</div>
+						</div>		
+					</div>
+				</section><!-- /.book-appointment -->
+
+				
+		</div><!-- #main -->
+
+	
+
+		<!-- Footer Section -->
+		<footer id="colophon" class="site-footer gray" role="contentinfo">
+			<div class="site-info">
+				<div class="grid-container grid-container-padded">
+					
+					<div class="grid-x grid-margin-x">
+
+						<!-- Footer Widget area #1 -->
+						<div class="medium-6 large-auto cell">
+							<div id="text-5" class="footer-section widget widget_text">
+								<h4>Kevin Nolan</h4>
+								<div class="footer-section-body">
+									<div class="textwidget">
+										<p>
+											With ample experience developing large retail websites, I have worked internationally with Marketing and IT professionals, taking from that a breadth of knowledge as I seek the next challenging project.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Widget area #2 -->
+						<div class="medium-6 large-auto cell">
+							<div class="footer-section widget">
+								<h4>Get in Touch</h4>
+								<div class="footer-section-body">
+									<p>
+										<i class="fa fa-phone"></i> (904) 832-7611<br />
+										<i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:ask@kevinnolan.me">ask@kevinnolan.me</a>
+
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Footer Widget area #3 -->
+						<div class="medium-6 large-auto cell">
+							<div class="footer-section widget">
+								<h4>Let's Meet for Coffee</h4>
+								<div class="footer-section-body">
+									
+
+									<p>While I am always open to other locations, my choice would be <a target="_blank" href="https://www.thedencoffeeshop.com">The Den Coffee Shop</a> for thier spacious meeting rooms! </p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Widget area #4 -->
+						<div class="medium-6 large-auto cell">
+							<div class="footer-section widget">
+								<h4>Hours of Availability</h4>
+								<p>Booking calendar coming soon, but for now just <a href="/contact-kevin-nolan.html">get in touch</a> to reserve a time.</p>
+								
+								<div class="footer-section-body">
+									<p>
+										<strong>Monday - Friday</strong>
+										11am - 9pm<br />
+										<strong>Saturday</strong>
+										9am - 7pm
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Widget area #5 -->
+						<div class="medium-6 large-auto cell">
+							<div class="footer-section widget social_widget">
+								<h4>Social Media</h4>
+								<div class="footer-section-body">
+									<div class="social-links">
+										
+										<a href="#"><a href="https://github.com/tgorge" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+										<a href="https://www.linkedin.com/in/webnolan" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright Section -->
+			<div class="copy">
+				<div class="grid-container grid-container-padded">
+					<div class="grid-x grid-margin-x">
+						<div class="small-12 medium-auto cell">
+							<p class="copyright">
+								Copyright <sup>&copy;</sup> 2019, All Rights Reserved. 
+							</p>
+						</div>
+
+						<div class="small-12 medium-auto cell">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- .site-footer -->
+			
+
+	</div>
+	<!-- JavaScripts -->   
+			
+    <script src="contact/contact.js"></script>
+	<script src="assets/javascripts/main.min.js"></script>
+</body>
+</html> 
